@@ -23,3 +23,8 @@ A war3map.j Jass minifier for Warcraft 3.
   
 Note that this is meant to run on the final war3map.j file, not any Jass script.
 The entry points are the functions `main` and `config`, so if they do not exist, the whole source is considered not used and will be deleted.
+
+---------------------------------------
+
+More functions can be added to the inline list, the syntax is very simple: the first word is the function that is getting replaced, followed by a space, and the rest of the line is the replacement.
+The original function arguments are mapped to `\0`, `\1`, and so on.
