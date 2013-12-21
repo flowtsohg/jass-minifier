@@ -10,26 +10,10 @@ A war3map.j Jass minifier for Warcraft 3.
 * Removes unneeded whitespace.
 * Renames functions, global variables, function arguments and local variables.
 * Removes useless zeroes from numbers, converts hexadecimal numbers to decimal numbers, and changes decimal numbers to exponent representation if it's shorter.  
-
-```
-0.10;
-1.0;
-0x1;
-1000;
-```
-Becomes:  
-
-```
-.1;
-1.;
-1;
-1e3;
-```
-
-* Inlines constants (also external ones, as seen in [jass_constants](https://github.com/flowtsohg/jass-minifier/jass_constants.j)).
-* Removes dead functions.
+* Inlines constants (also external ones, as seen in [jass_constants](https://github.com/flowtsohg/jass-minifier/blob/master/jass_constants.j)).
+* Removes dead functions and globals.
 * Creates constants for heavily used boolean values and numbers.
-* Inlines all the one-liner functions in Warcraft 3, as seen in [jass_functions.j](https://github.com/flowtsohg/jass-minifier/jass_functions.j).
+* Inlines all the one-liner functions in Warcraft 3, as seen in [jass_functions.j](https://github.com/flowtsohg/jass-minifier/blob/master/jass_functions.j).
 
 ---------------------------------------
 
